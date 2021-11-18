@@ -37,7 +37,20 @@ public class Player {
     public List<Card> getinhandCard(){
         return inhandCard;
 
+    }
 
+    public Status playerMoves(){
+        Status status;
+        if (getCardinHandValue()< 17){
+            status = Status.HIT;
+        }
+        else if (getCardinHandValue()>= 17 || getCardinHandValue()<21){
+            status = Status.STICK;
+        }
+        else {
+            status = Status.BUST;
+        }
+        return status;
     }
 
 
