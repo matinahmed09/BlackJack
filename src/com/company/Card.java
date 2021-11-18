@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.List;
+
 public class Card {
     private Suit suit;
     private int number;
