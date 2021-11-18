@@ -7,9 +7,7 @@ public class Player {
     private String name;
 
     public Player(String name) {
-        Scanner JustPlay = new Scanner(System.in);
-        System.out.println("Present Your Name");
-        this.name = JustPlay.next();
+       this.name =name;
     }
 
 
@@ -20,4 +18,21 @@ public class Player {
     public void setName(String name) {
         this.name = name;
     }
+
+    /*
+    public int getCardinHandValue(){
+        int cardvalueinhand = 0;
+        for (Card card: getCardinHandValue()){
+            cardvalueinhand+= card.getNumber();
+        }
+        return cardvalueinhand;
+    }
+
+    public void addCardtoHand(Card card){
+
+    }
+
+    public List<Card> get
+
+     */
 }
