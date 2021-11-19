@@ -38,6 +38,12 @@ public class Deck {
    }
 
 
+   @Override
+   public String toString() {
+      return "Deck{" +
+              "deckofcards=" + deckofcards +
+              '}';
+   }
 }
 
 
